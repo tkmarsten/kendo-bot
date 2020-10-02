@@ -1,18 +1,8 @@
-require('dotenv').config();
+const Discord = require('discord.js');
+const bot = new Discord.Client();
 
-const { Client } = require('discord.js');
-const client = new Client();
-
-client.on('ready', () => {
-    console.log(`${client.user.tag} has logged in.`);
+bot.on('ready', () => {
+    console.log(`${bot.user.tag} is online.`);
 });
 
-client.on('message', (message) => {
-    if (message.author.bot) return;
-    console.log(`[${message.author.tag}]: ${message.content}`);
-    if (message.content === 'hello') {
-        message.channel.send('hello');
-    }
-});
-
-client.login(process.env.KENDO_BOT_TOKEN);
+bot.login(process.env.token);
