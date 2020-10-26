@@ -15,6 +15,7 @@ for (const file of commandFiles) {
 
 bot.on('ready', () => {
     console.log(`${bot.user.tag} is online.`);
+    bot.user.setActivity('Type $help to learn about me!');
 });
 
 bot.on('message', message => {
