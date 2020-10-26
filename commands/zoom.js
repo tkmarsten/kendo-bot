@@ -2,6 +2,7 @@ const Discord = require('discord.js');
 
 module.exports = {
     name: 'zoom',
+    description: 'Zoom practice information',
 
     execute(message, args) {
         const zoom = new Discord.MessageEmbed()

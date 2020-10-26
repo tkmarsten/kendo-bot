@@ -12,7 +12,21 @@ module.exports = {
             data.push(commands.map(command => command.name).join(', '));
             data.push(`\nYou can send \`${prefix}commands [command name]\` to get info on a specific command!`);
 
-            message.reply(data);
+            return message.reply(data);
         }
+
+        const name = args[0].toLowerCase();
+        const command = commands.get(name) || commands.find(c => c.aliases && c.aliases.includes(name));
+
+        if (!command) {
+            return message.reply('That\'s not a valid command!');
+        }
+
+        data.push(`Name: ${command.name}`);
+
+        if (command.aliases) data.push(`Aliases: ${command.aliases.join(', ')}`);
+        if (command.description) data.push(`Description: ${command.description}`);
+
+        message.channel.send(data, { split: true });
     },
 };
