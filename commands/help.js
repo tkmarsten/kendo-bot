@@ -12,6 +12,7 @@ module.exports = {
             .addFields(
                 { name: 'Creator', value: 'Tiarnan' },
                 { name: 'Prefix', value: `${prefix}` },
+                { name: 'Commands', value: `Type \`${prefix}commands\` for a list of commands` },
             );
 
         message.channel.send(botInfo);
