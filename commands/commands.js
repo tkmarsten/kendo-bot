@@ -12,7 +12,7 @@ module.exports = {
             data.push(commands.map(command => command.name).join(', '));
             data.push(`\nYou can send \`${prefix}commands [command name]\` to get info on a specific command!`);
 
-            return message.author.reply(data);
+            message.reply(data);
         }
     },
 };
