@@ -17,6 +17,8 @@ bot.on('message', message => {
         if (!args.length) {
             return message.channel.send(`You have not input any arguments, ${message.author}!`);
         }
+
+        message.channel.send(`Command name: ${command}\nArguments: ${args}`);
     }
     if (message.content === `${prefix}server`) {
         message.channel.send(`Server name: ${message.guild.name}`);
