@@ -15,6 +15,6 @@ module.exports = {
                 { name: 'Commands', value: 'server' },
             );
 
-        Discord.Channel.send(botInfo);
+        message.channel.send(botInfo);
     },
 };
