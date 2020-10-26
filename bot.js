@@ -34,10 +34,6 @@ bot.on('message', message => {
         console.error(error);
         message.reply('There was an error executing that command!');
     }
-
-    if (message.channel.type === 'dm') {
-        return message.reply('I cannot execute commands inside DMs.');
-    }
 });
 
 bot.login(process.env.token);
