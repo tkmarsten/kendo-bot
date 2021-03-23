@@ -11,6 +11,7 @@ module.exports = {
             .setThumbnail(message.guild.iconURL())
             .addFields(
                 { name: 'Name', value: `${message.guild.name}` },
+                { name: 'Manager', value: `${message.guild.owner.user.tag}` },
                 { name: 'Members', value: `${message.guild.memberCount}` },
             );
 
