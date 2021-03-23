@@ -11,7 +11,9 @@ module.exports = {
             .setThumbnail('https://i.imgur.com/qh1gXMS.png')
             .addFields(
                 { name: 'Advisor', value: 'Darrick Lew Sensei - Kendo 4 Dan, Iaido 3 Dan' },
-                { name: 'President', value: 'Jane Higa' }
+                { name: 'President', value: 'Jane Higa' },
+                { name: 'Affiliations', value: 'PNKF, AUSKF' },
+                { name: 'Website', value: 'http://students.washington.edu/uwkc/' },
             );
 
         message.channel.send(embed)
