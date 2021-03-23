@@ -8,7 +8,7 @@ module.exports = {
         const embed = new Discord.MessageEmbed()
             .setColor(color)
             .setTitle('Kendo Club at University of Washington')
-            .setThumbnail('https://imgur.com/a/rwR5DOr')
+            .setThumbnail('https://i.imgur.com/qh1gXMS.png')
             .addFields(
                 { name: 'Advisor', value: 'Darrick Lew Sensei - Kendo 4 Dan, Iaido 3 Dan' },
                 { name: 'President', value: 'Jane Higa' }
