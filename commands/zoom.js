@@ -9,6 +9,7 @@ module.exports = {
         const embed = new Discord.MessageEmbed()
             .setColor(color)
             .setTitle('Zoom Practice')
+            .setThumbnail('https://us05st1.zoom.us/static/94171/image/new/ZoomLogo.png')
             .addFields(
                 { name: 'Days', value: 'Wednesday, Friday', inline: true },
                 { name: 'Time', value: '7-8pm PST', inline: true },
