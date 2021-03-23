@@ -11,7 +11,7 @@ module.exports = {
             .addFields(
                 { name: 'Days', value: 'Wednesday, Friday', inline: true },
                 { name: 'Time', value: '7-8pm PST', inline: true },
-                { name: 'Link', value: 'https://washington.zoom.us/j/93417649586' },
+                { name: 'Link', value: 'https://washington.zoom.us/j/93417649586?pwd=TENzNjdUNGxqVWhnemZSRFhxY1Ntdz09' },
             );
 
         message.channel.send(zoom);
