@@ -1,11 +1,12 @@
 const Discord = require('discord.js');
+const { color } = require('../config.json')
 
 module.exports = {
     name: 'club',
 
     execute(message, args) {
-        const embed = Discord.MessageEmbed()
-            .setColor('#55aac9')
+        const embed = new Discord.MessageEmbed()
+            .setColor(color)
             .setTitle('Kendo Club at University of Washington')
             .setThumbnail('https://imgur.com/a/rwR5DOr')
             .addFields(
