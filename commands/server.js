@@ -1,7 +1,18 @@
+const Discord = require('discord.js');
+
 module.exports = {
     name: 'server',
-    description: 'Display server name',
+    description: 'Display server information',
+
     execute(message, args) {
-        message.channel.send(`Server name: ${message.guild.name}`);
+        const embed = new Discord.MessageEmbed()
+            .setColor('#55aac9')
+            .setTitle('Server Information')
+            .addFields(
+                { name: 'Name', value: `${message.guild.name}` },
+                { name: 'Members', value: `${message.guild.memberCount}` },
+            );
+
+        message.channel.send(embed);
     },
 };
