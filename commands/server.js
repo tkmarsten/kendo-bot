@@ -1,4 +1,5 @@
 const Discord = require('discord.js');
+const { color } = require('../config.json')
 
 module.exports = {
     name: 'server',
@@ -6,7 +7,7 @@ module.exports = {
 
     execute(message, args) {
         const embed = new Discord.MessageEmbed()
-            .setColor('#55aac9')
+            .setColor(color)
             .setTitle('Server Information')
             .setThumbnail(message.guild.iconURL())
             .addFields(
