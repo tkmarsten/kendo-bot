@@ -5,7 +5,7 @@ module.exports = {
     name: 'help',
 
     execute(message, args) {
-        const botInfo = new Discord.MessageEmbed()
+        const embed = new Discord.MessageEmbed()
             .setColor('#55aac9')
             .setTitle('Bot Information')
             .setDescription('Bot Senpai, Hanshi 8 Dan')
@@ -15,6 +15,6 @@ module.exports = {
                 { name: 'Commands', value: `Type \`${prefix}commands\` for a list of commands` },
             );
 
-        message.channel.send(botInfo);
+        message.channel.send(embed);
     },
 };
