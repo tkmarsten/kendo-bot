@@ -32,7 +32,7 @@ bot.on('message', message => {
         command.execute(message, args);
     } catch (error) {
         console.error(error);
-        message.reply('There was an error executing that command!');
+        message.reply('there was an error executing that command!');
     }
 });
 
