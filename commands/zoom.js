@@ -5,7 +5,7 @@ module.exports = {
     description: 'Zoom practice information',
 
     execute(message, args) {
-        const zoom = new Discord.MessageEmbed()
+        const embed = new Discord.MessageEmbed()
             .setColor('#55aac9')
             .setTitle('Zoom Practice')
             .addFields(
@@ -14,6 +14,6 @@ module.exports = {
                 { name: 'Link', value: 'https://washington.zoom.us/j/93417649586?pwd=TENzNjdUNGxqVWhnemZSRFhxY1Ntdz09' },
             );
 
-        message.channel.send(zoom);
+        message.channel.send(embed);
     },
 };
