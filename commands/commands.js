@@ -1,6 +1,5 @@
 const { DiscordAPIError } = require('discord.js');
 const { prefix } = require('../config.json');
-const { color } = require('../config.json')
 
 module.exports = {
     name: 'commands',
